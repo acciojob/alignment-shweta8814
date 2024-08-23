@@ -1,51 +1,161 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<title>HTML Assignment 3</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin: 10px auto;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 1px;
+            text-align: center;
+        }
+       
+        .middle {
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .green {
+            background-color: green;
+            color: white;
+        }
+        .blue {
+            background-color: blue;
+            color: white;
+        }
+        /* Center-aligned heading */
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-	<h1>HTML Assignment #3</h1>
-	<table id="table-1" class"middle" border="1px"style="width:100%;">
-		<tr>
-			<th>left</th>
-			<th>center</th>
-			<th>right</th>
-		</tr>
-	</table>
-	<table id="table-1" class"middle" border="1px"style="width:100%;">
-		<tr>
-			<th>left</th>
-			<th>center</th>
-			<th>right</th>
-		</tr>
-	</table>
-	<table id="table-1" class"middle" border="1px"style="width:100%;">
-		<tr>
-			<th>left</th>
-			<th>center</th>
-			<th>right</th>
-		</tr>
-	</table>
-	<!-----table2---->
-	<table id="table-2" border="1px"style="width:100%;">
-		<tr>
-			<th cell:t21></th>
-		</tr>
-	</table>
-	<table id="table-2" border="1px"style="width:100%;">
-		<tr>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-	</table>
+    <h1>HTML Assignment #3</h1>
 
+    <!-- Table 1 -->
+    <table id="table-1" class="middle" style="width:100%;hight:100%">
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13">right</td></td>
+        </tr>
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13">right</td></td>
+        </tr>
+        <tr>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13">right</td></td>
+        </tr>
+    </table>
 
+    <!-- Table 2 -->
+    <table id="table-2" class="middle" style="width:100%;hight:100%">
+        <tr>
+            <td id="t21" colspan="6">This is a merged cell in the first row</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+            <td>Cell 9</td>
+            <td>Cell 10</td>
+            <td>Cell 11</td>
+            <td>Cell 12</td>
+        </tr>
+        <tr>
+            <td>Cell 13</td>
+            <td>Cell 14</td>
+            <td>Cell 15</td>
+            <td>Cell 16</td>
+            <td>Cell 17</td>
+            <td>Cell 18</td>
+        </tr>
+        <tr>
+            <td>Cell 19</td>
+            <td>Cell 20</td>
+            <td>Cell 21</td>
+            <td>Cell 22</td>
+            <td>Cell 23</td>
+            <td>Cell 24</td>
+        </tr>
+        <tr>
+            <td>Cell 25</td>
+            <td>Cell 26</td>
+            <td>Cell 27</td>
+            <td>Cell 28</td>
+            <td>Cell 29</td>
+            <td>Cell 30</td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td>Green Row 1</td>
+            <td>Green Row 1</td>
+            <td>Green Row 1</td>
+            <td>Green Row 1</td>
+            <td>Green Row 1</td>
+            <td>Green Row 1</td>
+        </tr>
+        <tr>
+            <td id="t-image" colspan="6">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image">
+            </td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+            <td>Cell 9</td>
+            <td>Cell 10</td>
+            <td>Cell 11</td>
+            <td>Cell 12</td>
+        </tr>
+        <tr>
+            <td>Cell 13</td>
+            <td>Cell 14</td>
+            <td>Cell 15</td>
+            <td>Cell 16</td>
+            <td>Cell 17</td>
+            <td>Cell 18</td>
+        </tr>
+        <tr class="blue">
+            <td>Blue Row 1</td>
+            <td>Blue Row 1</td>
+            <td>Blue Row 1</td>
+            <td>Blue Row 1</td>
+            <td>Blue Row 1</td>
+            <td>Blue Row 1</td>
+        </tr>
+    </table>
+</body>
 </html>
